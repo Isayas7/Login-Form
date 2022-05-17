@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home_id" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Homecontroller">
+   <children>
+      <Label fx:id="wel_label" layoutX="211.0" layoutY="72.0" text="WELCOME" textFill="#761368">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="logout_btn" layoutX="253.0" layoutY="227.0" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #C34BA3;" text="Logout" />
+   </children>
+</AnchorPane>

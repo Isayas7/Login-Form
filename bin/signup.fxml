@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="signup_id" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpController">
+   <children>
+      <GridPane layoutX="-3.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="602.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="218.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="382.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="First Name" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label text="password" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+            <Label text="Last Name" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Label text="Email" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+            <Label text="Phone Number" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Label text="Gender" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <Label layoutX="10.0" layoutY="102.0" text="Middle Name" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <TextField fx:id="fname_TF" style="-fx-border-color: #C34BA3;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="lname_TF" layoutX="232.0" layoutY="88.0" style="-fx-border-color: #C34BA3;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="mname_TF" layoutX="232.0" layoutY="88.0" style="-fx-border-color: #C34BA3;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="pnumber_TF" layoutX="222.0" layoutY="208.0" style="-fx-border-color: #C34BA3;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="email_TF" layoutX="222.0" layoutY="328.0" style="-fx-border-color: #C34BA3;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="pass_TF" layoutX="222.0" layoutY="388.0" style="-fx-border-color: #C34BA3;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </TextField>
+            <JFXRadioButton fx:id="male_RB" text="Male" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="female_RB" text="Female" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </JFXRadioButton>
+            <JFXButton fx:id="login_btn" prefHeight="25.0" prefWidth="236.0" style="-fx-background-color: #C34BA3;" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <Label text="Already a member?" textFill="#1b1bd7" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXButton fx:id="signUp_btn" prefHeight="25.0" prefWidth="234.0" style="-fx-background-color: #C34BA3;" text="SignUp" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="10.0" right="150.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <Text fill="#761368" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRATION FORM" wrappingWidth="271.46875" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Text>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

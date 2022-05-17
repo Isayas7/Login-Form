@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="login_id" prefHeight="400.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logincontroller">
+   <children>
+      <Label layoutX="117.0" layoutY="130.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="187.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_username" layoutX="190.0" layoutY="127.0" prefHeight="27.0" prefWidth="222.0" promptText="username here..." style="-fx-border-color: #C34BA3;" />
+      <JFXButton fx:id="btn_login" layoutX="190.0" layoutY="230.0" prefHeight="32.0" prefWidth="222.0" style="-fx-background-color: #C34BA3;" text="Login" />
+      <JFXButton fx:id="btn_signup" layoutX="418.0" layoutY="330.0" style="-fx-background-color: #C34BA3;" text="SignUp!" underline="true" />
+      <Label layoutX="333.0" layoutY="333.0" text="Not a user?" textFill="#0e0aeb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="282.0" prefHeight="17.0" prefWidth="222.0" textFill="#f50909" />
+      <Text fill="#671368" layoutX="206.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Form" wrappingWidth="222.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="tf_password" layoutX="190.0" layoutY="185.0" prefHeight="25.0" prefWidth="222.0" promptText="password here..." style="-fx-border-color: #C34BA3;" />
+   </children>
+</AnchorPane>
