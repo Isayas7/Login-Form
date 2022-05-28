@@ -4,9 +4,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
 public class UserQueries {
 
     private static final String URL = "jdbc:mysql://localhost:3306/users";
@@ -16,8 +13,6 @@ public class UserQueries {
     private static Connection connection;
     private static PreparedStatement psInsert;
     private static PreparedStatement SelectAll;
-
-    ObservableList<User> list = FXCollections.observableArrayList();
 
     UserQueries() {
         try {
